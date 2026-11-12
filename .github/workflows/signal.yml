@@ -1,0 +1,13 @@
+name: Synthetic recovery source
+on:
+  workflow_dispatch:
+permissions: {}
+jobs:
+  synthetic-worker:
+    if: github.event_name == 'workflow_dispatch' && github.ref == 'refs/heads/recovery-test-code' && endsWith(github.repository, '/btc-recovery-acceptance-20261112') && github.run_attempt == '1'
+    runs-on: ubuntu-24.04
+    timeout-minutes: 1
+    steps:
+      - run: |
+          printf '%s\n' 'SYNTHETIC ONLY: completed worker with failure; no delivery.'
+          exit 1

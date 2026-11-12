@@ -1,0 +1,45 @@
+name: Synthetic recovery acceptance
+on:
+  workflow_dispatch:
+    inputs:
+      case:
+        type: choice
+        required: true
+        options: [safe, uncertain]
+      entry_sha:
+        type: string
+        required: true
+      settings_sha256:
+        type: string
+        required: true
+      seeds_sha256:
+        type: string
+        required: true
+permissions: {}
+concurrency:
+  group: recovery-test-20261112
+  cancel-in-progress: false
+jobs:
+  recover:
+    if: github.event_name == 'workflow_dispatch' && github.ref == 'refs/heads/recovery-test-code' && endsWith(github.repository, '/btc-recovery-acceptance-20261112') && github.run_attempt == '1' && github.sha == inputs.entry_sha
+    name: recover
+    permissions:
+      actions: read
+      contents: write
+    runs-on: ubuntu-24.04
+    timeout-minutes: 3
+    steps:
+      - uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683
+        with:
+          ref: ${{ github.sha }}
+          persist-credentials: false
+      - name: Run exactly one reviewed synthetic incident
+        env:
+          GITHUB_TOKEN: ${{ github.token }}
+          TEST_CASE: ${{ inputs.case }}
+          TEST_ENTRY_SHA: ${{ inputs.entry_sha }}
+          TEST_SETTINGS_SHA256: ${{ inputs.settings_sha256 }}
+          TEST_SEEDS_SHA256: ${{ inputs.seeds_sha256 }}
+        run: |
+          python3 -B recovery_acceptance.py --root . --settings settings.json run \
+            --seeds seeds.json --case "$TEST_CASE"
