@@ -1,0 +1,44 @@
+{
+  "refs": {
+    "recovery-test-journal": {
+      "commit_sha": "c9da74e2a50120211dcd6dcbda7353c70f3b960c",
+      "blob_sha": "c2a53fd838e176794a8591d42f244fe7e2ce6d68",
+      "sha256": "a8198524f58e72b56283ab71ebddada22840f108b46ef7165bb3fca9919c5558"
+    },
+    "recovery-test-stream-safe": {
+      "commit_sha": "f95ea096752017558a1d69a00fd9086b7d4285c0",
+      "blob_sha": "82747d7f26991e0788d98ca25c747837b42510d6",
+      "sha256": "50ab11cab57014884eebcbb36b6b49738a1509e244f04969c6b1f7b76d49babd"
+    },
+    "recovery-test-fence-safe": {
+      "commit_sha": "aaaea281d053583d0b048458755af6edebbcfb71",
+      "blob_sha": "81246982ce13d66fe8173d6d5049be9e4aedf4f4",
+      "sha256": "cbdd7498640d58eeb238d0c477f99e40209e6ccab7f01ac712e31ee51c9457de"
+    },
+    "recovery-test-stream-uncertain": {
+      "commit_sha": "6417bb8c2e55b1c41d5d2520ce3a4b3f13f9dbcb",
+      "blob_sha": "b48f0b89d09cb1594c53e951f025328411694f4c",
+      "sha256": "06b008e965989d22a07b973f87fe657e7b4ba431d6437908aaba0122e2198a24"
+    },
+    "recovery-test-fence-uncertain": {
+      "commit_sha": "7d67f272728189ef0acb4e1228132b6bf3d7ab9a",
+      "blob_sha": "c5f7da34020d5bcedc152367ab84f0eeb2101872",
+      "sha256": "2bb15331c4be2b274df6a1f54f2a9c904ffbe5442f2d47ec00abdb193da7bfc4"
+    }
+  },
+  "worker": {
+    "run": {
+      "kind": "signal",
+      "workflow": ".github/workflows/signal.yml",
+      "id": "43263711890",
+      "number": 1,
+      "attempt": "1",
+      "expected_start_ms": 1794502440000
+    },
+    "entry": "805da86aff403d6faa87b0720d00ab0f796a5192",
+    "repository_id": 1455454574,
+    "job_id": 131341539633,
+    "run_sha256": "4f2d5f701024f4900da06cedab49cc49590bff6ed34acc8f4dc3f38fb703ef73",
+    "jobs_sha256": "2454e3b78b3f2391f7690abf7f126744ca204a0ef8101d391a782271b3a35da4"
+  }
+}

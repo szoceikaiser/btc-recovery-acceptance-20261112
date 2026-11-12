@@ -1,0 +1,210 @@
+{
+  "repository": "szoceikaiser/btc-recovery-acceptance-20261112",
+  "repository_id": 1455454574,
+  "code_sha": "53796706a9e084f74c6d747527dbd68aaee7efa3",
+  "recovery_workflow_sha256": "fdc6eb37aa3532d83c946e7c3065828ede0431730f4fd208a8c41199a1971ff9",
+  "worker_workflow_sha256": "a16306bcc886e8207532c8dd5f981f5b584ad89d32da96a9202b7e8a69f77ec3",
+  "public_access": {
+    "safe": {
+      "schema": "btc-public-access-v1",
+      "enabled": true,
+      "repositories": {
+        "szoceikaiser/btc-recovery-acceptance-20261112": {
+          "id": 1455454574,
+          "visibility": "public",
+          "branches": [
+            "recovery-test-code",
+            "recovery-test-stream-safe",
+            "recovery-test-fence-safe"
+          ]
+        }
+      },
+      "protections": {
+        "szoceikaiser/btc-recovery-acceptance-20261112@recovery-test-stream-safe": {
+          "repository": "szoceikaiser/btc-recovery-acceptance-20261112",
+          "repository_id": 1455454574,
+          "branch": "recovery-test-stream-safe",
+          "active_rules_sha256": "af9f3eaddbf17e551fe70b8b26f1e9b0c8f1ec8eeebff80037fd91074acd6c00",
+          "rulesets": {
+            "27137458": {
+              "public_sha256": "2e6c119ccf04ed2329e14c54dcc2d5eff36176ab06b1556a43627a0a82e6cdf2",
+              "bypass_review": {
+                "schema": "btc-bypass-review-v1",
+                "repository": "szoceikaiser/btc-recovery-acceptance-20261112",
+                "repository_id": 1455454574,
+                "branch": "recovery-test-stream-safe",
+                "ruleset_id": 27137458,
+                "public_sha256": "2e6c119ccf04ed2329e14c54dcc2d5eff36176ab06b1556a43627a0a82e6cdf2",
+                "bypass_actors": [],
+                "status": "actually-reviewed",
+                "reviewer": "Codex Hauptchat",
+                "reviewed_at": "2026-11-12T16:57:05+00:00",
+                "evidence_sha256": "de5486cb2ed5854fa20748ffcefa66dba1923c87202bc9dead3487636726fd38",
+                "sha256": "18d636a7caf87c70ebad0c8ce5c41a54dda5e0ade5944b6a7cb5fd6d2aa4757e"
+              }
+            }
+          }
+        },
+        "szoceikaiser/btc-recovery-acceptance-20261112@recovery-test-fence-safe": {
+          "repository": "szoceikaiser/btc-recovery-acceptance-20261112",
+          "repository_id": 1455454574,
+          "branch": "recovery-test-fence-safe",
+          "active_rules_sha256": "a5c868fad7de0d8d42b9ef290444307f051d4239ed4819410ffdafd2bc34c204",
+          "rulesets": {
+            "27137491": {
+              "public_sha256": "6acd5614795f6e0e7a877c1635952cf54f87466345be646b2959dc0573d63ed1",
+              "bypass_review": {
+                "schema": "btc-bypass-review-v1",
+                "repository": "szoceikaiser/btc-recovery-acceptance-20261112",
+                "repository_id": 1455454574,
+                "branch": "recovery-test-fence-safe",
+                "ruleset_id": 27137491,
+                "public_sha256": "6acd5614795f6e0e7a877c1635952cf54f87466345be646b2959dc0573d63ed1",
+                "bypass_actors": [],
+                "status": "actually-reviewed",
+                "reviewer": "Codex Hauptchat",
+                "reviewed_at": "2026-11-12T16:57:05+00:00",
+                "evidence_sha256": "f6091fdbc3cc31043d7b2bc4494198abbd723211a8e203177f604ab217216ee8",
+                "sha256": "f8096788a093f1d21b59af2ce638412d3b40edb4a54f32479a98ce74e91985be"
+              }
+            }
+          }
+        }
+      },
+      "credential_reviews": {}
+    },
+    "uncertain": {
+      "schema": "btc-public-access-v1",
+      "enabled": true,
+      "repositories": {
+        "szoceikaiser/btc-recovery-acceptance-20261112": {
+          "id": 1455454574,
+          "visibility": "public",
+          "branches": [
+            "recovery-test-code",
+            "recovery-test-stream-uncertain",
+            "recovery-test-fence-uncertain"
+          ]
+        }
+      },
+      "protections": {
+        "szoceikaiser/btc-recovery-acceptance-20261112@recovery-test-stream-uncertain": {
+          "repository": "szoceikaiser/btc-recovery-acceptance-20261112",
+          "repository_id": 1455454574,
+          "branch": "recovery-test-stream-uncertain",
+          "active_rules_sha256": "b78bc228d353b231fab8455c4ceceaf09b2831b43cca3ce3f2f8ef902ace0e93",
+          "rulesets": {
+            "27137515": {
+              "public_sha256": "29e17bd0c8f71004c2ba5a87496a8035396df78b0113dbfad4674f58af182990",
+              "bypass_review": {
+                "schema": "btc-bypass-review-v1",
+                "repository": "szoceikaiser/btc-recovery-acceptance-20261112",
+                "repository_id": 1455454574,
+                "branch": "recovery-test-stream-uncertain",
+                "ruleset_id": 27137515,
+                "public_sha256": "29e17bd0c8f71004c2ba5a87496a8035396df78b0113dbfad4674f58af182990",
+                "bypass_actors": [],
+                "status": "actually-reviewed",
+                "reviewer": "Codex Hauptchat",
+                "reviewed_at": "2026-11-12T16:57:05+00:00",
+                "evidence_sha256": "116c2581e64e9e7820d0d8eb0ceb28664585a58d366aff18191a8d73216367bc",
+                "sha256": "2a3e346492e61794195c8eed9d674b5fb4e64f1f387c2e657f4411ee42ab4d59"
+              }
+            }
+          }
+        },
+        "szoceikaiser/btc-recovery-acceptance-20261112@recovery-test-fence-uncertain": {
+          "repository": "szoceikaiser/btc-recovery-acceptance-20261112",
+          "repository_id": 1455454574,
+          "branch": "recovery-test-fence-uncertain",
+          "active_rules_sha256": "bb1c92dca2867ba8b0ab1e5b152144c0b4ebc923aaae015558c67b698c51cb54",
+          "rulesets": {
+            "27137522": {
+              "public_sha256": "9f5cf60b136b53d3bac88c1297df85d26968ee004f03086973515894f110df7b",
+              "bypass_review": {
+                "schema": "btc-bypass-review-v1",
+                "repository": "szoceikaiser/btc-recovery-acceptance-20261112",
+                "repository_id": 1455454574,
+                "branch": "recovery-test-fence-uncertain",
+                "ruleset_id": 27137522,
+                "public_sha256": "9f5cf60b136b53d3bac88c1297df85d26968ee004f03086973515894f110df7b",
+                "bypass_actors": [],
+                "status": "actually-reviewed",
+                "reviewer": "Codex Hauptchat",
+                "reviewed_at": "2026-11-12T16:57:05+00:00",
+                "evidence_sha256": "13983b02957e5aad58b77f0d29564e0c202fb750b4bd60cec804898126f3b24f",
+                "sha256": "813cf60a79424df241cb9275011042a00404cf73614e817f84b6a06de204b9bb"
+              }
+            }
+          }
+        }
+      },
+      "credential_reviews": {}
+    }
+  },
+  "journal_access": {
+    "schema": "btc-public-access-v1",
+    "enabled": true,
+    "repositories": {
+      "szoceikaiser/btc-recovery-acceptance-20261112": {
+        "id": 1455454574,
+        "visibility": "public",
+        "branches": [
+          "recovery-test-journal"
+        ]
+      }
+    },
+    "protections": {
+      "szoceikaiser/btc-recovery-acceptance-20261112@recovery-test-journal": {
+        "repository": "szoceikaiser/btc-recovery-acceptance-20261112",
+        "repository_id": 1455454574,
+        "branch": "recovery-test-journal",
+        "active_rules_sha256": "16f3bf9da8c8b553806c4690d8ed1c788fa218d433a0592e27a2a6a9a8b85643",
+        "rulesets": {
+          "27137526": {
+            "public_sha256": "798f12d82686e18bd57f3daa75da506b568f23839eb0ea3c4255ab94e9ce07c0",
+            "bypass_review": {
+              "schema": "btc-bypass-review-v1",
+              "repository": "szoceikaiser/btc-recovery-acceptance-20261112",
+              "repository_id": 1455454574,
+              "branch": "recovery-test-journal",
+              "ruleset_id": 27137526,
+              "public_sha256": "798f12d82686e18bd57f3daa75da506b568f23839eb0ea3c4255ab94e9ce07c0",
+              "bypass_actors": [],
+              "status": "actually-reviewed",
+              "reviewer": "Codex Hauptchat",
+              "reviewed_at": "2026-11-12T16:57:05+00:00",
+              "evidence_sha256": "641f54008a7a8a4d873a04ca396c4c93b80a7db397e10ecd41d2dc88b5f864d3",
+              "sha256": "02ab072d0835e62aeef6952b128a476d170fd490dd3b8636caf6d7fbc0a97672"
+            }
+          }
+        }
+      }
+    },
+    "credential_reviews": {
+      "recovery_journal_write": {
+        "schema": "btc-writer-review-v1",
+        "role": "recovery_journal_write",
+        "repository_id": 1455454574,
+        "repositories": [
+          "szoceikaiser/btc-recovery-acceptance-20261112"
+        ],
+        "branches": [
+          "recovery-test-journal"
+        ],
+        "permissions": {
+          "contents": "write",
+          "metadata": "read"
+        },
+        "credential_type": "github-app",
+        "credential_reference": "github-actions-installation:repository:1455454574:job:recover",
+        "other_repository_write": false,
+        "status": "actually-reviewed",
+        "reviewer": "Codex Hauptchat",
+        "reviewed_at": "2026-11-12T16:57:05+00:00",
+        "evidence_sha256": "1a9168c6900fc275fd44540a08b8ed14466f5524ea3f8a1345f94310b8dd0201",
+        "sha256": "0b99a1428809d0f53996f84120c7ea668b35bddadffe0c2a44161659f21fd356"
+      }
+    }
+  }
+}
